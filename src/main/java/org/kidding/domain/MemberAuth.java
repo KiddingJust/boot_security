@@ -12,7 +12,7 @@ import lombok.NoArgsConstructor;
 @Entity
 @Data
 @NoArgsConstructor
-@Table(name = "t_member_auth")
+@Table(name = "tbl_member_auth")
 public class MemberAuth {
 
 	@Id

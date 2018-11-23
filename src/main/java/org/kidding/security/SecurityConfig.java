@@ -48,7 +48,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter{
 		log.info("configure");
 		log.info("-----------------------------------------");
 		
-		http.formLogin();
+		http.formLogin().loginPage("/sample/customlogin");
 		http.rememberMe().tokenValiditySeconds(60*60*24);
 	}
 	

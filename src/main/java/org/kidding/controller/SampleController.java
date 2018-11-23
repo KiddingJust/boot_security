@@ -24,6 +24,11 @@ public class SampleController {
 		log.info("doMember................");
 	}
 	
+	@GetMapping("/customlogin")
+	public void customlogin() {
+		log.info("customLogin....");
+	}
+	
 	@PreAuthorize("hasRole('ROLE_BUYER')")
 	@GetMapping("/buyer")
 	public void doBuyer() {
